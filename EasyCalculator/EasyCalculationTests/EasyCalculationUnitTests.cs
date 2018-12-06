@@ -1,8 +1,6 @@
-﻿using System.Collections.ObjectModel;
-using System.Text.RegularExpressions;
+﻿using System.Text.RegularExpressions;
 using EasyCalculator;
 using NUnit.Framework;
-
 
 namespace EasyCalculationTests
 {
@@ -19,7 +17,7 @@ namespace EasyCalculationTests
             
             // Act
             var easyCalc = new EasyCalculation();
-            var result = easyCalc.CalculateChecksum(text);
+            var result = easyCalc.GetMessageWithChecksumHeaderAndFooter(text);
             
             // Assert
             Assert.IsTrue(Regex.IsMatch(result, checksumPattern));
@@ -36,7 +34,7 @@ namespace EasyCalculationTests
 
             // Act
             var easyCalc = new EasyCalculation();
-            var result = easyCalc.CalculateChecksum(text);
+            var result = easyCalc.GetMessageWithChecksumHeaderAndFooter(text);
 
             // Assert
             Assert.AreEqual(result, expected);

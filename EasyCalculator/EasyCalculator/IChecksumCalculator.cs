@@ -5,6 +5,6 @@ namespace EasyCalculator
     {
         bool VerifyChecksum(string message);
 
-        string CalculateChecksum(string message);
+        string GetMessageWithChecksumHeaderAndFooter(string message);
     }
 }

@@ -42,7 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EasyCalculation.cs" />
-    <Compile Include="EasyCalculationChecksumPair.cs" />
+    <Compile Include="EasyCalculationConfiguration.cs" />
     <Compile Include="IChecksumCalculator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
